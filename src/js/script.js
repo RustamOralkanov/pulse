@@ -1,2 +1,4 @@
-let answer = prompt("Вам есть 18?", "");
-console.log(answer);
+$(document).ready(function(){
+    $('.carousel__inner').slick();
+  });
+  
