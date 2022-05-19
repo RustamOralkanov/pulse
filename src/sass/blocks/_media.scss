@@ -113,6 +113,13 @@
             margin-left: 40px;
         }
     }
+    .carousel {
+        &__inner {
+            img {
+                width: 100vw;
+            }
+        }
+    }
 
 }
 
@@ -196,6 +203,16 @@
         }
         .feed-form {
             margin: 60px auto;
+        }
+    }
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 750px;
+            margin: 0 auto;
+            img {
+                width: 100vw;
+            }
         }
     }
 }
