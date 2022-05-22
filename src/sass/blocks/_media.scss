@@ -119,6 +119,34 @@
                 width: 100vw;
             }
         }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            button {
+                margin: 5px 10px 0 10px;
+                border: none;
+                border-radius: 100%;
+                width: 10px;
+                height: 10px;
+                font-size: 0px;
+                background-color: $main-color;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin: 10px 10px;
+        }
+    }
+    .reviews {
+        &-item {
+            margin: 0 20px;
+        }
     }
 
 }
@@ -211,20 +239,45 @@
             width: 100vw;
             margin: 0 auto;
             .slick-dots {
-                display: flex;
-                justify-content: center;
-                padding: 0;
-                list-style: none;
                 button {
                     margin: 5px 10px 0 10px;
-                    border: none;
-                    border-radius: 100%;
                     width: 10px;
                     height: 10px;
-                    font-size: 0px;
-                    background-color: $main-color;
                 }
             }
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 20px;
+        }
+        &__tabs {
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 37px;
+            margin-bottom: 10px;
+        }
+        &__content {
+            margin-top: 40px;
+        }
+    }
+    .reviews {
+        &-item {
+        &__block {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30px;
+            img {
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+            }
+        }
         }
     }
 }
