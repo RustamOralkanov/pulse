@@ -70,6 +70,11 @@
             justify-content: center;
             padding: 0;
             list-style: none;
+            .slick-active {
+                button {
+                    background-color:#aeaeae;
+                }
+            }
             button {
                 margin: 5px 10px 0 10px;
                 border: none;
@@ -142,7 +147,7 @@
                 width: 100vw;
             }
         }
-        .slick-dots {
+        /* .slick-dots {
             display: flex;
             justify-content: center;
             padding: 0;
@@ -156,7 +161,7 @@
                 font-size: 0px;
                 background-color: $main-color;
             }
-        }
+        } */
     }
     
     .catalog {
@@ -207,7 +212,7 @@
         }
     }
     .button {
-        height: 21px;
+        height: 27px;
         font-size: 11px;
         &_main {
             height: 40px;
@@ -262,13 +267,17 @@
             position: relative;
             width: 100vw;
             margin: 0 auto;
-            .slick-dots {
+            /* .slick-dots {
                 button {
                     margin: 5px 10px 0 10px;
                     width: 10px;
                     height: 10px;
+                    outline: none;
+                    &:hover {
+                        background-color: aqua;
+                    }
                 }
-            }
+            } */
         }
     }
     .catalog {
@@ -326,4 +335,17 @@
             }
         }
     }
+    .modal {
+        padding: 35px 40px 40px 40px;
+        &__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 40px;
+            line-height: 15px;
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+
 }
