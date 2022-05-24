@@ -85,6 +85,30 @@ $(document).ready(function(){
     validateForms('#order form');
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+	//smooth scroll
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$('a[href^="#"').on('click', function() {
+
+		let href = $(this).attr('href');
+	
+		$('html, body').animate({
+			scrollTop: $(href).offset().top+"px"
+		}, {
+			duration: 900,   // по умолчанию «400» 
+			easing: "linear" // по умолчанию «swing» 
+		});
+		return false;
+	});
+	
 });
 
 
